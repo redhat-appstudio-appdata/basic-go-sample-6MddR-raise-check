@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-pnai
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:6MddR-devfile-sample-pnai
+      - image: quay.io/redhat-appstudio/user-workload@sha256:e80c3071662455e07804dd3f430c35402bc9fd6653e08b6c39a0e0bd8df7a194
         name: my-nodejs
         ports:
         - containerPort: 3001
