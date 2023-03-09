@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-c3nf
+  namespace: ktsao-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:790b77db2cef7b6142c40eca14abd9a68c4a926bac17a1fb0b4d55160524228b
+        name: my-go
+        resources: {}
+status: {}
